@@ -1,0 +1,2 @@
+def getSomeText():
+    return "abcd"
