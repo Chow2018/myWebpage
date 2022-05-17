@@ -9,11 +9,11 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route("/youtubeSubtitle")
-def youtubeSubtitle():
-    return getYouTubeTranscript("Ngk09xRRzW8")
+#@app.route("/youtubeSubtitle")
+#def youtubeSubtitle():
+#    return getYouTubeTranscript("Ngk09xRRzW8")
 
-@app.route("/youtubeSubtitle2/<url>")
+@app.route("/youtubeSubtitle/<url>")
 def youtubeSubtitle2(url):
     subtitle = {
         "url": url,
